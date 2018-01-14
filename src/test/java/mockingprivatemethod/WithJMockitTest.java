@@ -1,3 +1,5 @@
+package mockingprivatemethod;
+
 import mockit.Expectations;
 import mockit.Mock;
 import mockit.MockUp;
@@ -6,12 +8,10 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 @RunWith(JMockit.class)
-public class PrivateMethodMockingTest {
+public class WithJMockitTest {
 
     public static class Foo {
-        private void bar() {
-            throw new RuntimeException();
-        }
+        private void bar() { throw new RuntimeException(); }
     }
 
     @Test
